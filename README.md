@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📝 App de Notas - Next.js
 
-## Getting Started
+Aplicación web desarrollada con Next.js que permite crear, visualizar y organizar notas con categorías, incluyendo papelera y estadísticas.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Funcionalidades
+
+* Crear notas
+* Ver notas individuales
+* Eliminar y restaurar (papelera)
+* Filtrar por categoría
+* Ver estadísticas
+
+---
+
+## 📂 Rutas implementadas
+
+### 🔹 Rutas simples
+
+* `/` → Página de inicio personalizada
+* `/notes` → Listado de notas
+* `/about` → Información del proyecto
+* `/stats` → Estadísticas
+
+### 🔹 Rutas anidadas
+
+* `/notes/create` → Crear nota
+* `/notes/trash` → Papelera
+
+### 🔹 Rutas dinámicas
+
+* `/notes/[id]` → Ver nota
+* `/notes/categories/[id]` → Filtrar por categoría
+
+---
+
+## ✏️ Mejora en "Create Note"
+
+### 🔸 Versión original
+
+El formulario inicial solo renderizaba inputs, pero **no guardaba las notas ni manejaba estado**, por lo que no se creaban realmente.
+
+---
+
+### 🔸 Versión actual
+
+Se implementó:
+
+* `useState` para manejar datos del formulario
+* `localStorage` para persistencia
+* generación de IDs consecutivos
+* redirección automática
+
+```js
+const lastId = notes.length > 0 
+  ? Math.max(...notes.map(n => n.id)) 
+  : 0;
+
+const newNote = {
+  id: lastId + 1,
+  title,
+  content,
+  category
+};
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Esto permite crear notas reales, almacenarlas y visualizarlas correctamente en la aplicación.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Tecnologías
 
-## Learn More
+* Next.js (App Router)
+* React
+* Tailwind CSS
+* LocalStorage
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ▶️ Ejecución
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm install
+npm run dev
+```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
