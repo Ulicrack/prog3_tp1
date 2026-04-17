@@ -12,6 +12,14 @@ export default function LeyendasPage() {
   return (
     <div className="min-h-screen bg-black p-8 md:p-16">
       
+      {/* Boton para volver */}
+      <Link
+        href="/pilotos"
+        className="text-red-600 font-bold hover:text-white transition-colors mb-8 inline-block"
+      >
+        &larr; VOLVER A LA GRILLA DE PILOTOS
+      </Link>
+      
       {/* HEADER */}
       <header className="mb-16 border-b border-amber-500/30 pb-8 flex justify-between items-end">
         <div>
