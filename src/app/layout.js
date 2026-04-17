@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
       <body className="bg-zinc-950 text-white flex flex-col min-h-screen">
         
         {/* NAVBAR */}
-        <nav className="border-b  bg-zinc-800 backdrop-blur-md sticky top-0 z-50">
+        <nav className="border-b bg-zinc-800 backdrop-blur-md sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             <Link href="/" className="font-black text-2xl italic tracking-tighter">
               F1<span className="text-red-600">.</span>
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
             <div className="flex gap-8 text-sm font-bold uppercase tracking-widest">
               <Link href="/" className="hover:text-red-600 transition-colors">Home</Link>
               <Link href="/pilotos" className="hover:text-red-600 transition-colors">Pilotos</Link>
-              <Link href="/escuderias" className="hover:text-red-600 transition-colors">Escuderías</Link>
+              <Link href="pilotos/escuderias" className="hover:text-red-600 transition-colors">Escuderías</Link>
             </div>
           </div>
         </nav>

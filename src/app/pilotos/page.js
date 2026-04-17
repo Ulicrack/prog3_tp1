@@ -29,6 +29,18 @@ export default function PilotosPage() {
           </div>
         </Link>
 
+        {/* ENLACE A ESCUDERÍAS */}
+        <Link href="/pilotos/escuderias">
+          <div className="bg-zinc-800 p-6 rounded-lg border-2 border-dashed border-zinc-700 hover:border-red-600 transition-all group">
+            <h2 className="text-xl font-bold text-white group-hover:text-red-600 italic">
+              🏎️ Ver Escuderías &rarr;
+            </h2>
+            <p className="text-zinc-400 text-sm italic">
+              Filtrar pilotos por equipo.
+            </p>
+          </div>
+        </Link>
+
         {/* ENLACES A RUTAS DINÁMICAS */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
           {pilotosPrincipales.map((p) => (
