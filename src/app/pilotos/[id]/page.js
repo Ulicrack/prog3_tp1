@@ -21,7 +21,7 @@ export default async function PilotoDetalle({ params }) {
       
       {/* Boton para volver usando el componente Link */}
       <Link 
-        href={`/pilotos/escuderias/${piloto.equipo.toLowerCase().replaceAll(" ", "-")}`} 
+        href="/pilotos/escuderias" 
         className="text-red-600 font-bold hover:text-white transition-colors mb-8 inline-block"
       >
         &larr; VOLVER A LA GRILLA

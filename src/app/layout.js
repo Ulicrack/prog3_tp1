@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
             <div className="flex gap-8 text-sm font-bold uppercase tracking-widest">
               <Link href="/" className="hover:text-red-600 transition-colors">Home</Link>
               <Link href="/pilotos" className="hover:text-red-600 transition-colors">Pilotos</Link>
-              <Link href="pilotos/escuderias" className="hover:text-red-600 transition-colors">Escuderías</Link>
+              <Link href="/pilotos/escuderias" className="hover:text-red-600 transition-colors">Escuderías</Link>
             </div>
           </div>
         </nav>

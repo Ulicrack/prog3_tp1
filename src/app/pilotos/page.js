@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-export default function PilotosPage() {
+export default function LeyendasPage() {
   // Lista de pilotos 
   const pilotosPrincipales = [
     { id: 'verstappen', nombre: 'Max Verstappen', numero: '33' },
