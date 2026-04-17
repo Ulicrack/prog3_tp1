@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
       <body className="bg-zinc-950 text-white flex flex-col min-h-screen">
         
         {/* NAVBAR */}
-        <nav className="border-b border-zinc-800 bg-black/50 backdrop-blur-md sticky top-0 z-50">
+        <nav className="border-b  bg-zinc-800 backdrop-blur-md sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             <Link href="/" className="font-black text-2xl italic tracking-tighter">
               F1<span className="text-red-600">.</span>
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         </main>
 
         {/* FOOTER */}
-        <footer className="border-t border-zinc-800 py-10 px-6 bg-zinc-950">
+        <footer className="border-t py-10 px-6 bg-zinc-800">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="text-zinc-500 text-sm">© 2026 F1 Hub Proyecto Educativo</p>
             <div className="flex gap-6">
