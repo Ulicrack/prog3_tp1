@@ -1,80 +1,42 @@
-# 📝 App de Notas - Next.js
+# 🏎️ F1 Central
 
-Aplicación web desarrollada con Next.js que permite crear, visualizar y organizar notas con categorías, incluyendo papelera y estadísticas.
-
----
-
-## 🚀 Funcionalidades
-
-* Crear notas
-* Ver notas individuales
-* Eliminar y restaurar (papelera)
-* Filtrar por categoría
-* Ver estadísticas
+**F1 Central** es una plataforma web de alto rendimiento diseñada para fanáticos de la máxima categoría del automovilismo. El proyecto ofrece una experiencia inmersiva para explorar la grilla actual de pilotos, conocer las escuderías más potentes y rendir tributo a las leyendas que hicieron historia en las pistas.
 
 ---
 
-## 📂 Rutas implementadas
+## 📋 Descripción del Proyecto
 
-### 🔹 Rutas simples
+Este sitio ha sido desarrollado utilizando **Next.js** (App Router) y **Tailwind CSS v4**, enfocándose en la velocidad de navegación y una arquitectura de componentes moderna. 
 
-* `/` → Página de inicio personalizada
-* `/notes` → Listado de notas
-* `/about` → Información del proyecto
-* `/stats` → Estadísticas
-
-### 🔹 Rutas anidadas
-
-* `/notes/create` → Crear nota
-* `/notes/trash` → Papelera
-
-### 🔹 Rutas dinámicas
-
-* `/notes/[id]` → Ver nota
-* `/notes/categories/[id]` → Filtrar por categoría
+### Características principales:
+* **Navegación Dinámica:** Fichas técnicas personalizadas para cada piloto generadas mediante rutas dinámicas.
+* **Secciones Especializadas:** Rutas anidadas para el "Hall of Fame" y listados de escuderías.
+* **Diseño Racing:** Interfaz optimizada con una estética oscura y acentos en "F1 Red", siguiendo los lineamientos visuales de la categoría.
+* **Layouts Inteligentes:** Uso de layouts anidados para mantener barras de navegación laterales consistentes en secciones específicas.
 
 ---
 
-## ✏️ Mejora en "Create Note"
+## 👥 Información del Equipo
 
-### 🔸 Versión original
+| Dato | Detalle |
+| :--- | :--- |
+| **Grupo** | Alt + f4 |
+| **Proyecto** | TP N°1 - Programación 3 - Next.js |
+| **Institución** | Itec Rio Cuarto |
 
-El formulario inicial solo renderizaba inputs, pero **no guardaba las notas ni manejaba estado**, por lo que no se creaban realmente.
-
----
-
-### 🔸 Versión actual
-
-Se implementó:
-
-* `useState` para manejar datos del formulario
-* `localStorage` para persistencia
-* generación de IDs consecutivos
-* redirección automática
-
-```js
-const lastId = notes.length > 0 
-  ? Math.max(...notes.map(n => n.id)) 
-  : 0;
-
-const newNote = {
-  id: lastId + 1,
-  title,
-  content,
-  category
-};
-```
-
-Esto permite crear notas reales, almacenarlas y visualizarlas correctamente en la aplicación.
+### 🛠️ Integrantes
+* **Ulises Cabrera**
+* **Pablo Abataneo**
+* **Franco Bressan**
+* **Leandro Odetto**
 
 ---
 
-## 🛠 Tecnologías
+## 🚀 Tecnologías Utilizadas
 
-* Next.js (App Router)
-* React
-* Tailwind CSS
-* LocalStorage
+* [Next.js](https://nextjs.org/) - Framework de React para producción.
+* [Tailwind CSS v4](https://tailwindcss.com/) - Motor de estilos CSS-first.
+* [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) - Lógica de programación.
 
 ---
 
@@ -83,6 +45,5 @@ Esto permite crear notas reales, almacenarlas y visualizarlas correctamente en l
 ```bash
 npm install
 npm run dev
-```
 
----
+```
