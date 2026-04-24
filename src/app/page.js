@@ -25,7 +25,7 @@ export default function Home() {
         </Link>
 
         <Link 
-          href="/pilotos/escuderias"
+          href="/escuderias"
           className="bg-zinc-800 border border-zinc-700 px-8 py-3 rounded-md font-bold hover:bg-zinc-700 transition-colors"
         >
           Escuderías

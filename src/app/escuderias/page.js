@@ -14,7 +14,7 @@ export default function EscuderiasPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {listaEscuderias.map(([id, esc]) => (
-          <Link key={id} href={`/pilotos/escuderias/${id}`}>
+          <Link key={id} href={`/escuderias/${id}`}>
             <div key={id} className="bg-zinc-900 p-6 rounded-md border-l-4 border-red-600 hover:bg-zinc-800 transition-colors cursor-pointer h-full">
               <h2 className="text-2xl font-bold text-white mb-2 uppercase">{esc.nombre}</h2>
               <p className="text-red-600 text-xs font-bold mb-4 uppercase tracking-widest">

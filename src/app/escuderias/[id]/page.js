@@ -14,7 +14,7 @@ export default async function EscuderiaDetalle({ params }) {
       <div className="p-10 bg-black min-h-screen text-white flex flex-col items-center justify-center">
         <h1 className="text-4xl font-black italic uppercase">Box, Box!</h1>
         <p className="text-zinc-500 mt-2">Escudería no encontrada en los registros.</p>
-        <Link href="/pilotos/escuderias" className="text-red-600 underline mt-8">Regresar al Paddock</Link>
+        <Link href="/escuderias" className="text-red-600 underline mt-8">Regresar al Paddock</Link>
       </div>
     );
   }
@@ -31,7 +31,7 @@ export default async function EscuderiaDetalle({ params }) {
   return (
     <div className="p-8 md:p-20 bg-zinc-950 min-h-screen text-white font-sans">
       
-      <Link href="/pilotos/escuderias" className="group flex items-center gap-2 text-zinc-500 hover:text-white mb-12 transition-colors uppercase text-xs font-bold tracking-widest">
+      <Link href="/escuderias" className="group flex items-center gap-2 text-zinc-500 hover:text-white mb-12 transition-colors uppercase text-xs font-bold tracking-widest">
         <span className="group-hover:-translate-x-1 transition-transform">&larr;</span> 
         Volver a Constructores
       </Link>
